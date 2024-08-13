@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "611089309089",
+    "firebase_url": "https://stockviewer-c04f5.firebaseio.com",
+    "project_id": "stockviewer-c04f5",
+    "storage_bucket": "stockviewer-c04f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611089309089:android:816932001ea2903d",
+        "android_client_info": {
+          "package_name": "com.example.rikit.stockviewer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611089309089-qkqrms87cms03hc7srednqn1elsg6m79.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rikit.stockviewer",
+            "certificate_hash": "04c196d019482266814e3cd842f1eeb4d8904d35"
+          }
+        },
+        {
+          "client_id": "611089309089-07014a5245sq6sb6hcac5n891p1dq4e8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxeWWTxm5M5mjfvooaMGaM5o_lI-uweYU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611089309089-07014a5245sq6sb6hcac5n891p1dq4e8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

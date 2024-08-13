@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <include
+        layout="@layout/sign_up_toolbar"
+        android:id="@+id/signUpToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/signUpEmail"
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="@dimen/editTextHeight"
+        android:layout_marginTop="118dp"
+        android:background="@drawable/white_box"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpToolbar" />
+
+    <EditText
+        android:id="@+id/signUpPass"
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="@dimen/editTextHeight"
+        android:layout_marginTop="@dimen/editTextTopMargin"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:background="@drawable/white_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpEmail" />
+
+    <EditText
+        android:id="@+id/signUpPass2"
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="@dimen/editTextHeight"
+        android:layout_marginTop="@dimen/editTextTopMargin"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/confirmPassword"
+        android:background="@drawable/white_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpPass" />
+
+    <Button
+        android:id="@+id/createAcc"
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="@dimen/editTextHeight"
+        android:layout_marginBottom="22.3dp"
+        android:background="@drawable/yellow_button"
+        android:onClick="signUpClick"
+        android:text="@string/createAcc"
+        android:textColor="@color/white"
+        android:textSize="@dimen/smallText"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="79.7dp"
+        android:layout_marginBottom="22.3dp"
+        android:text="@string/already"
+        android:textColor="@color/brownishGrey"
+        android:textSize="@dimen/smallText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/signUpClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.3dp"
+        android:layout_marginBottom="22.3dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/signIn"
+        android:textColor="@color/midBlue"
+        android:textSize="@dimen/smallText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+</android.support.constraint.ConstraintLayout>
